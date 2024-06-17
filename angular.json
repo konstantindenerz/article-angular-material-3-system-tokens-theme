@@ -100,6 +100,39 @@
           }
         }
       }
+    },
+    "design-tokens-web": {
+      "projectType": "library",
+      "root": "projects/design-tokens-web",
+      "sourceRoot": "projects/design-tokens-web/src",
+      "prefix": "labs",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/design-tokens-web/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/design-tokens-web/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/design-tokens-web/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/design-tokens-web/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   }
 }
