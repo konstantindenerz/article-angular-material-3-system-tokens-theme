@@ -44,6 +44,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/article-angular-material-3-system-tokens-theme/",
               "budgets": [
                 {
                   "type": "initial",
