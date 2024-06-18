@@ -1,0 +1,12 @@
+@use 'tokens/ref-typeface';
+@use 'tokens/ref-colors';
+@use 'tokens/sys-typescale';
+@use 'tokens/sys-color-dark';
+@use 'tokens/sys-color-light';
+@use 'tokens/comp-fab';
+
+:root {
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+  font: var(--md-sys-typescale-body-large);
+}

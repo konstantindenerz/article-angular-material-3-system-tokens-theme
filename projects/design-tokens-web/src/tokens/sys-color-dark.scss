@@ -1,0 +1,62 @@
+@mixin dark {
+  --md-sys-color-primary: var(--md-ref-primary-primary80);
+  --md-sys-color-on-primary: var(--md-ref-primary-primary20);
+  --md-sys-color-primary-container: var(--md-ref-primary-primary30);
+  --md-sys-color-on-primary-container: var(--md-ref-primary-primary90);
+  --md-sys-color-primary-fixed: var(--md-ref-primary-primary90);
+  --md-sys-color-on-primary-fixed: var(--md-ref-primary-primary10);
+  --md-sys-color-primary-fixed-dim: var(--md-ref-primary-primary80);
+  --md-sys-color-on-primary-fixed-variant: var(--md-ref-primary-primary30);
+  --md-sys-color-secondary: var(--md-ref-secondary-secondary80);
+  --md-sys-color-on-secondary: var(--md-ref-secondary-secondary20);
+  --md-sys-color-secondary-container: var(--md-ref-secondary-secondary30);
+  --md-sys-color-on-secondary-container: var(--md-ref-secondary-secondary90);
+  --md-sys-color-secondary-fixed: var(--md-ref-secondary-secondary90);
+  --md-sys-color-on-secondary-fixed: var(--md-ref-secondary-secondary10);
+  --md-sys-color-secondary-fixed-dim: var(--md-ref-secondary-secondary80);
+  --md-sys-color-on-secondary-fixed-variant: var(--md-ref-secondary-secondary30);
+  --md-sys-color-tertiary: var(--md-ref-tertiary-tertiary80);
+  --md-sys-color-on-tertiary: var(--md-ref-tertiary-tertiary20);
+  --md-sys-color-tertiary-container: var(--md-ref-tertiary-tertiary30);
+  --md-sys-color-on-tertiary-container: var(--md-ref-tertiary-tertiary90);
+  --md-sys-color-tertiary-fixed: var(--md-ref-tertiary-tertiary90);
+  --md-sys-color-on-tertiary-fixed: var(--md-ref-tertiary-tertiary10);
+  --md-sys-color-tertiary-fixed-dim: var(--md-ref-tertiary-tertiary80);
+  --md-sys-color-on-tertiary-fixed-variant: var(--md-ref-tertiary-tertiary30);
+  --md-sys-color-error: var(--md-ref-error-error80);
+  --md-sys-color-on-error: var(--md-ref-error-error20);
+  --md-sys-color-error-container: var(--md-ref-error-error30);
+  --md-sys-color-on-error-container: var(--md-ref-error-error90);
+  --md-sys-color-outline: var(--md-ref-neutral-variant-neutral-variant60);
+  --md-sys-color-surface: var(--md-ref-neutral-neutral6);
+  --md-sys-color-on-surface: var(--md-ref-neutral-neutral80);
+  --md-sys-color-surface-variant: var(--md-ref-neutral-variant-neutral-variant30);
+  --md-sys-color-on-surface-variant: var(--md-ref-neutral-variant-neutral-variant80);
+  --md-sys-color-inverse-surface: var(--md-ref-neutral-neutral90);
+  --md-sys-color-inverse-on-surface: var(--md-ref-neutral-neutral10);
+  --md-sys-color-inverse-primary: var(--md-ref-primary-primary40);
+  --md-sys-color-shadow: var(--md-ref-neutral-neutral0);
+  --md-sys-color-surface-tint: var(--md-ref-primary-primary80);
+  --md-sys-color-outline-variant: var(--md-ref-neutral-variant-neutral-variant30);
+  --md-sys-color-scrim: var(--md-ref-neutral-neutral0);
+  --md-sys-color-surface-container-highest: var(--md-ref-neutral-neutral22);
+  --md-sys-color-surface-container-high: var(--md-ref-neutral-neutral17);
+  --md-sys-color-surface-container: var(--md-ref-neutral-neutral12);
+  --md-sys-color-surface-container-low: var(--md-ref-neutral-neutral10);
+  --md-sys-color-surface-container-lowest: var(--md-ref-neutral-neutral4);
+  --md-sys-color-surface-bright: var(--md-ref-neutral-neutral24);
+  --md-sys-color-surface-dim: var(--md-ref-neutral-neutral6);
+  --md-sys-color-background: var(--md-sys-color-surface);
+  --md-sys-color-on-background: var(--md-sys-color-on-surface);
+}
+
+.labs-theme-dark {
+  @include dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include dark;
+  }
+}
+

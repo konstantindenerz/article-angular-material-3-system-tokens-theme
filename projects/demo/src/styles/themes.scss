@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+
+@function create-theme($type: light, $density: 0) {
+  @return mat.define-theme((
+    color: (
+      theme-type: $type,
+      use-system-variables: true,
+      system-variables-prefix: md-sys-color,
+    ),
+    typography: (
+      use-system-variables: true,
+      system-variables-prefix: md-sys-typescale,
+    ),
+    density: (
+      scale: $density
+    ),
+  ));
+}
+
+$light-theme: create-theme($type: light);
+$dark-theme: create-theme($type: dark);
+
+:root {
+  @include mat.all-component-themes($light-theme);
+}
+
+:root {
+  @media (prefers-color-scheme: dark) {
+    @include mat.all-component-colors($dark-theme);
+    @include mat.all-component-typographies($dark-theme);
+  }
+}
+

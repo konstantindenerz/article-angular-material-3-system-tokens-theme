@@ -1,0 +1,32 @@
+.app-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.example-card {
+  max-width: 20rem;
+}
+
+.example-header-image {
+  background-image: url('https://avatars.githubusercontent.com/u/1221055');
+  background-size: cover;
+}
+
+p {
+  padding-top: 1rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.fab {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+
+}

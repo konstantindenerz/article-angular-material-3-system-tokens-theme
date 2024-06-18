@@ -37,6 +37,9 @@
             "styles": [
               "projects/demo/src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["dist/design-tokens-web"]
+            },
             "scripts": []
           },
           "configurations": {

@@ -5,7 +5,7 @@
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "paths": {
-      "design-tokens-web": [
+      "@labs/design-tokens-web": [
         "./dist/design-tokens-web"
       ]
     },

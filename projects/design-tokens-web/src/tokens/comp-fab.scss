@@ -1,0 +1,10 @@
+[mat-fab][secondary]{
+  --mat-fab-foreground-color: var(--md-sys-color-on-secondary-container);
+  --mdc-fab-container-color: var(--md-sys-color-secondary-container);
+}
+
+
+[mat-fab][tertiary]{
+  --mat-fab-foreground-color: var(--md-sys-color-on-tertiary-container);
+  --mdc-fab-container-color: var(--md-sys-color-tertiary-container);
+}
