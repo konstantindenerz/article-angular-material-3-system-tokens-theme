@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
 
+## Article
+
+The current repo is created for this article: [Angular Material 3 Theming: Design Tokens and System Variables](https://konstantin-denerz.com/angular-material-3-theming-design-tokens-and-system-variables/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
